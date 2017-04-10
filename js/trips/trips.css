@@ -1,0 +1,44 @@
+.trip-wrap {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .trip-wrap .trip-button-box {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+    .trip-wrap .trip-button-box .trip-button {
+      width: 20%;
+      height: 15%;
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 10px;
+      font-size: 20px;
+      margin: 30px;
+      padding: 5px; }
+      .trip-wrap .trip-button-box .trip-button .add-button {
+        width: 30%;
+        height: 30%;
+        padding: 10px 0px; }
+  .trip-wrap .sample-trip-input {
+    width: 85%;
+    height: 35%;
+    background-color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    padding-left: 10px; }
+    .trip-wrap .sample-trip-input .trip-image-box {
+      display: flex;
+      justify-content: center; }
+      .trip-wrap .sample-trip-input .trip-image-box .trip-image {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        height: 90%; }
+    .trip-wrap .sample-trip-input .trip-input-text {
+      height: 70%;
+      margin: 15px; }
+      .trip-wrap .sample-trip-input .trip-input-text .bold-trip-text {
+        font-weight: bold; }
+
+/*# sourceMappingURL=trips.css.map */

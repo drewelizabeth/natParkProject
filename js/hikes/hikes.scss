@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Macondo|Open+Sans');
+
+.parks-wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  .moving-hike-wrap {
+    width:80%;
+    .moving-hike {
+      width: 50%;
+      height: 30%;
+      background-color: rgba(255, 255, 255, .75);
+      border-radius: 20px;
+      padding: 20px;
+      position: absolute;
+      top: 35%; 
+      // left: -750px;
+      left: 25vw; 
+      right: -400px;
+      animation-duration: 8s;
+      animation-name: hikingAcross;
+      animation-iteration-count: 1;
+      animation-delay: 3s;
+      @keyframes hikingAcross {
+        from {
+          transform: translate(0, 0);
+        }
+        to {
+          transform: translate(2000px, 0);
+        }
+      }
+      .img-wrap {
+        display: flex;
+        justify-content: center;
+        .footprint-img {
+          width: 50%;
+          height: 50%;
+        }
+      }
+      .animated-hike-text {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        .hikes-quote {
+          font-size: 30px;
+          font-family: 'Courgette', cursive;
+        }
+        .quote-credit {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  // set up for footprints on side of screen
+  // .footprints {
+  //   width:20%;
+  //   height: 90%;
+  //   display: flex;
+  //   flex-direction: column;
+  //   justify-content: center;
+  //   .cover {
+  //     width: 70%;
+  //     height: 25%;
+  //     background-color: red;
+  //     animation: walk 16s steps(16, end) infinite;
+  //   }
+  //   @keyframes walk {
+  //     to {
+  //     transform: translateX(675px);
+  //   }
+  //   }
+
+  //   }
+  //   .disappearing-foot {
+  //     width: 70%;
+  //     height: 25%;
+  //   }
+  }

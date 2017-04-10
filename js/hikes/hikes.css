@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Courgette|Dancing+Script|Macondo|Open+Sans");
+.parks-wrap {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse; }
+  .parks-wrap .moving-hike-wrap {
+    width: 80%; }
+    .parks-wrap .moving-hike-wrap .moving-hike {
+      width: 50%;
+      height: 30%;
+      background-color: rgba(255, 255, 255, 0.75);
+      border-radius: 20px;
+      padding: 20px;
+      position: absolute;
+      top: 35%;
+      left: 25vw;
+      right: -400px;
+      animation-duration: 8s;
+      animation-name: hikingAcross;
+      animation-iteration-count: 1;
+      animation-delay: 3s; }
+@keyframes hikingAcross {
+  from {
+    transform: translate(0, 0); }
+  to {
+    transform: translate(2000px, 0); } }
+      .parks-wrap .moving-hike-wrap .moving-hike .img-wrap {
+        display: flex;
+        justify-content: center; }
+        .parks-wrap .moving-hike-wrap .moving-hike .img-wrap .footprint-img {
+          width: 50%;
+          height: 50%; }
+      .parks-wrap .moving-hike-wrap .moving-hike .animated-hike-text {
+        display: flex;
+        justify-content: center;
+        text-align: center; }
+        .parks-wrap .moving-hike-wrap .moving-hike .animated-hike-text .hikes-quote {
+          font-size: 30px;
+          font-family: 'Courgette', cursive; }
+        .parks-wrap .moving-hike-wrap .moving-hike .animated-hike-text .quote-credit {
+          font-size: 20px; }
+
+/*# sourceMappingURL=hikes.css.map */

@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html lang="en" ng-app="natParkProject">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="./js/parks/parks.css">
+  <link rel="stylesheet" href="./js/trips/trips.css">
+  <link rel="stylesheet" href="./js/hikes/hikes.css">
+</head>
+
+<body ng-controller="mainCtrl">
+  <main role="main" class="main">
+
+    <div>
+      <header>
+        <nav class="nav-bar">
+          <div class="nav-space" ui-sref="home">Home</div>
+          <div class="nav-space" ui-sref="parks">Parks</div>
+          <div class="nav-space" ui-sref="hikes">Hikes</div>
+          <div class="nav-space" ui-sref="trips">My Trips</div>
+        </nav>
+      </header>
+    </div>
+
+    <ui-view>
+
+    </ui-view>
+
+
+
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.4.2/angular-ui-router.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+  <script src="app.js"></script>
+  <script src="mainCtrl.js"></script>
+  <script src="parkData.js"></script>
+  <script src="./js/parks/parksCtrl.js"></script>
+  <script src="./js/hikes/hikesCtrl.js"></script>
+  <script src="./js/trips/tripsCtrl.js"></script>
+  <script src="./js/home/homeTime.js"></script>
+  <script src="./js/parks/stateAbbs.js"></script>
+  <script src="./js/home/homeCtrl.js"></script>
+  <script src="./js/home/quoteService.js"></script>
+  <script src="./js/hikes/hikesService.js"></script>
+  
+
+
+
+</body>
+
+</html>

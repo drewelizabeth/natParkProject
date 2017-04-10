@@ -1,0 +1,20 @@
+<ui-view>
+  <div class="trip-wrap">
+    <div class="trip-button-box">
+      <button class="trip-button" ng-click="submitTrip = !submitTrip" style="color: black">Add New Trip<br><img class="add-button" src="https://cdn0.iconfinder.com/data/icons/math-business-icon-set/93/1_1-512.png"</button>
+    </div>
+    <div ng-show="submitTrip" class="sample-trip-input">
+      <div class="trip-image-box">
+        <img class="trip-image" src="https://www.tenayalodge.com/~/media/tenaya/images/cropped-photos/640-x-414-package-size/yosemite-tunnel-view-spring-640x414.jpg">
+      </div>
+      <div class="trip-input-text">
+        <p><span class="bold-trip-text">Park:</span> Yosemite</p>
+        <p><span class="bold-trip-text">Date:</span> April 22 - 24, 2016</p>
+        <p><span class="bold-trip-text">Trail:</span> Mist Trail</p>
+        <p><span class="bold-trip-text">Notes: </span>Going in April was great because the crowds were low and we could find
+          housing last minute. The hike was doable with a baby in the pack. Next time we should bring some water-resistant
+          pullovers for going under falls.</p>
+      </div>
+    </div>
+  </div>
+</ui-view>

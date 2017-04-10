@@ -1,0 +1,18 @@
+
+<ui-view>
+
+  <div class="main-search-box">
+    <div class="search-section">
+      <!--side search bar-->
+      <div class="park-search">
+        <input ng-model="parkNameSearch" type="text" placeholder="Search by park name" />
+        <select ng-model="stateSearch" ng-options="park.states for park in parks"></select>
+      </div>
+      <!--park thumbnails-->
+      <div class="park-result-box">
+        <div class="result-items" ng-repeat="park in parks | filter:{name: parkNameSearch, states:stateSearch.states}">{{park.name}}</div>
+      </div>
+    </div>
+  </div>
+
+</ui-view>
